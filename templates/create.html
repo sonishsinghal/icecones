@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>login</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/sign-in/signin.css" rel="stylesheet">
+</head>
+
+<body>
+    <form class="form-signin" method="post" action="/create">
+        {% csrf_token %}
+        <main class="form-group">
+            <form>
+                <h2 class="h6 mb-4 fw-normal color-text-tertiary text-center">Join Us</h2>
+                <h1 class="h2 mb-4 fw-normal text-center">Create your account</h1>
+
+                <div class="form-group mb-3">
+                    <label for="floatingInput">Username</label>
+                    <span class="star">*</span>
+                    <input type="text" class="form-control" name="username" id="floatingInput"
+                        placeholder="Enter Username">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="floatingInput">First Name</label>
+                    <span class="star">*</span>
+                    <input type="text" class="form-control" name="first_name" id="floatingInput"
+                        placeholder="Enter First Name">
+
+                </div>
+                <div class="form-group mb-3">
+                    <label for="floatingInput">Last Name </label>
+                    <span class="star">*</span>
+                    <input type="text" class="form-control" name="last_name" id="floatingInput"
+                        placeholder="Enter Last Name">
+
+                </div>
+                <div class="form-group mb-3">
+                    <label for="floatingInput">Email Address</label>
+                    <span class="star">*</span>
+                    <input type="email" class="form-control" name="email" id="floatingInput"
+                        placeholder="Enter Email Address">
+
+                </div>
+                <div class="form-group mb-3">
+                    <label for="floatingPassword">Password</label>
+                    <span class="star">*</span>
+                    <input type="password" class="form-control" name="password" id="floatingPassword"
+                        placeholder="Enter Password">
+
+                </div>
+
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+                <p class="login-callout mt-4 text-center">
+                    Already Have Account ?
+                    <a href="loginuser">Sign in</a>
+                </p>
+            </form>
+        </main>
+    </form>
+</body>
+
+</html>

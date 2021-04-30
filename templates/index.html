@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Index{% endblock title %}
+{% block body %}
+<div style="border: black solid 2px; margin: 10%; border-radius: 4px; text-align: center; padding: 1%;">
+
+  <h1 style="margin: 2%;">Welcome {{request.user}} ! <h1>
+    <p style="margin: 1%;">This is the Ice cream delivery App created by Sonish Singhal.</p>
+    <p style="margin: 1%;">Best features will be avaiable soon.</p>
+    <p> Use Navbar to Visit different part of App , Thank you!</p>
+    <p> Don't Forget to Order Ice cream :)</p>
+    <a style="text-decoration: none;" href="/logoutuser">Click here to logout</a>
+  </div>
+    
+{% endblock body %}
